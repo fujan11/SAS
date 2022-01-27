@@ -1,0 +1,78 @@
+// // cara tulis variable css
+
+// :root{
+//     --primary: #f4f4f4;
+//     --secondary: rgb(71, 69, 69);
+//     --text: blue;
+// }
+// .container{
+//     background-color: var(--primary);
+//     height: 800px;
+//     width: 80%;
+    
+//     .header{
+//         background-color: var(--secondary);
+//         width: 700px;
+//         height: 350px;
+//         display: flex;
+//         align-items: center;
+//         margin: 50px auto;
+//         h1,p {
+//             background-color: var(--text);
+//             padding: 30px;
+//         }
+//     }
+// }
+
+// SAS VARIABLE Lokal
+
+// $seconday: #f2cc8f;
+// $color  : #e07a5f;
+
+// body{
+//     $primary: #f4f4f4; //contoh lokal
+//     background-color: $primary;
+// }
+// h1, p{
+//     color: $color;
+// }
+// $seconday: #f2cc8f;
+// $color  : #e07a5f;
+
+// body{
+//     $primary: #f4f4f4 !global; //contoh lokal
+//     background-color: $primary;
+// }
+// h1, p{
+//     color: $primary;
+// }
+
+// keyword untuk menyimpan beberapa nilai dalam 1 variable
+
+// MAP
+// tanpa map
+// $alert-danger:red;
+// $alert-succes:green;
+// $alert-warning:yellow;
+
+// h1{
+//     color: $alert-warning;
+// }
+// p{
+//     color: $alert-danger;
+// }
+
+// dengan MAP
+
+$alert:(
+    'danger':red,
+    'succes':green,
+    'warning':yellow,
+);
+h1{
+    color: map-get($map: $alert, $key: warning );
+}
+p{
+    color: map-get($map: $alert, $key:succes ) ;
+}
+

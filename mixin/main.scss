@@ -1,0 +1,76 @@
+// @mixin : di pakai ketika kita ingin membuat mixin
+// @include : di buat ketika ingin menggunakan mixin
+// manual css
+// .header ul, .footer ul{
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+// .header li, .footer li{
+//     display: inline-block;
+// }
+// .header ul li{
+
+// }
+// .footer ul li{
+
+// }
+
+// MIXIN SIMPLE
+$text: #ddd;
+
+@mixin list-style{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li{
+        display: inline-block;
+        &:hover{
+        background-color: $text;
+    }
+        a{
+            color: $text;
+            text-decoration: none;
+        }
+    }
+}
+
+.header ul {
+    @include list-style();
+    li {
+        background-color: black;
+        padding: 0.8em;
+    }
+}
+.footer ul{
+    @include list-style();
+    li{
+        background-color: salmon;
+        padding: 0.4em;
+    }
+}
+
+// 1 MIXIN BISA PUNYA BANYAK ARGUMEN
+
+@mixin flex-box($direction: row, $justify: center, $align: center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    
+}
+.container{
+    @include flex-box(row-reverse, space-evenly, );
+    width: 600px;
+    height: 500px;
+    background-color: $text;
+    .box{
+        width: 60px;
+        height: 60px;
+        background-color: green;
+        text-align: center;
+        line-height: 60px;
+        justify-content: center;
+    }
+}

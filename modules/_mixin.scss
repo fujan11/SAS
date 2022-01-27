@@ -1,0 +1,24 @@
+$text: #ddd;
+@mixin flex-box($direction: row, $justify: center, $align: center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    
+}
+@mixin list-style{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li{
+        display: inline-block;
+        &:hover{
+        background-color: $text;
+    }
+        a{
+            color: $text;
+            text-decoration: none;
+        }
+    }
+}

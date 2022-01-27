@@ -1,0 +1,28 @@
+.main {
+  background-color: black;
+}
+
+.main .main-heading {
+  font-size: 2em;
+  color: white;
+}
+
+.main .main-paragraf {
+  font-size: 2em;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer .footer-heading {
+  font-size: 2em;
+  color: white;
+}
+
+.footer .footer-paragrap {
+  font-size: 2em;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

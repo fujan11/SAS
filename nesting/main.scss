@@ -1,0 +1,66 @@
+// .main{
+//     background-color: green;
+//     .main-heading{
+//         color: blueviolet;
+//     }
+// }
+// .main, 
+// footer{
+//     h1, p{
+//         letter-spacing:1px ;
+//     }
+// }
+// .main, footer{
+//     h1{
+//         font-size: 5em;
+//     }
+// }
+// "&" parent selector bisa mentarget element parent pada saat kita melakukan nesting
+
+
+// .main, footer{
+//     .container &{
+//         height: 700px;
+//         background-color: cornsilk;
+//         width: 80%;
+//     }
+//     background-color: green;
+//     h1, p{
+//         color: blueviolet;
+//     }
+// }
+// .container{
+//     height: 700px;
+//     width: 80%;
+//     background-color: cornsilk;
+//     &:hover{
+//         background-color: cyan;
+//     }
+// }
+
+
+.main{
+    background-color: black;
+    & &-heading{
+        font-size: 2em;
+        color: white;
+    
+    }
+    & &-paragraf{
+        font-size: 2em;
+        color: white;
+    }
+}
+// cara mudah
+.footer{
+    background-color: black;
+    #{&}-heading{
+        font-size: 2em;
+        color: white;
+    
+    }
+    #{&}-paragrap{
+        font-size: 2em;
+        color: white;
+    }
+}

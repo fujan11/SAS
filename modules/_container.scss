@@ -1,0 +1,16 @@
+@use 'mixin';
+$text: #ddd;
+.container{
+    @include mixin.flex-box(row-reverse, space-evenly, );
+    width: 600px;
+    height: 500px;
+    background-color: $text;
+    .box{
+        width: 60px;
+        height: 60px;
+        background-color: green;
+        text-align: center;
+        line-height: 60px;
+        justify-content: center;
+    }
+}

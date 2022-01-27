@@ -1,0 +1,5 @@
+$warna-dasar : salmon;
+h1{
+    text-align: center;
+    color: adjust-color($color: $warna-dasar, $red: 10, $green: -255);
+}

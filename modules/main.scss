@@ -1,0 +1,13 @@
+
+// cara pakai import
+// @import 'mixin';
+// @import 'header';
+// @import 'container';
+// @import 'footer';
+// alternativ
+// @import 'mixin', 'header', 'container', 'footer';
+
+@use 'header';
+@use 'container';
+@use 'footer';
+

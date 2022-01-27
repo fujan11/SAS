@@ -1,0 +1,8 @@
+@use 'mixin';
+.header ul {
+    @include mixin.list-style();
+    li {
+        background-color: black;
+        padding: 0.8em;
+    }
+}

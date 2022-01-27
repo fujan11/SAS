@@ -1,0 +1,104 @@
+.square-profile {
+  height: 200px;
+  width: 200px;
+  border: 5px solid white;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.circle-profile {
+  height: 100px;
+  width: 100px;
+  border: 5px solid white;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.nav {
+  background-color: #333;
+  color: #fff;
+}
+
+.right {
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1em;
+  border-left-color: black;
+}
+
+.gradient {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gradient li:nth-child(1) {
+  background-color: lighten green, 5%;
+}
+
+.gradient li:nth-child(2) {
+  background-color: lighten green, 10%;
+}
+
+.gradient li:nth-child(3) {
+  background-color: lighten green, 15%;
+}
+
+.gradient li:nth-child(4) {
+  background-color: lighten green, 20%;
+}
+
+.gradient li:nth-child(5) {
+  background-color: lighten green, 25%;
+}
+
+.gradient li:nth-child(6) {
+  background-color: lighten green, 30%;
+}
+
+.gradient li:nth-child(7) {
+  background-color: lighten green, 35%;
+}
+
+.gradient li:nth-child(8) {
+  background-color: lighten green, 40%;
+}
+
+.gradient li:nth-child(9) {
+  background-color: lighten green, 45%;
+}
+
+.gradient li:nth-child(10) {
+  background-color: lighten green, 50%;
+}
+
+.social {
+  list-style: none;
+  font-weight: bold;
+  font: arial;
+  font-size: 2em;
+}
+
+.social .youtube {
+  color: red;
+}
+
+.social .facebook {
+  color: blue;
+}
+
+.social .twitter {
+  color: lightblue;
+}
+
+.social .mobile {
+  color: yellow;
+}
+
+.social .extrajos {
+  color: orange;
+}
+/*# sourceMappingURL=main.css.map */
